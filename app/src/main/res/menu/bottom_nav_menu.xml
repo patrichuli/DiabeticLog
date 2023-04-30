@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/registro"
+        android:icon="@drawable/notas"
+        android:title="@string/registro" />
+
+    <item
+        android:id="@+id/inicioPantalla"
+        android:icon="@drawable/latido_del_corazon"
+        android:title="@string/inicio" />
+
+
+    <item
+        android:id="@+id/perfilUsuario"
+        android:icon="@drawable/usuario"
+        android:title="@string/perfil" />
+
+</menu>

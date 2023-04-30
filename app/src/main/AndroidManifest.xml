@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unileon.diabeticlog">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DiabeticLog"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".vista.BluetoothScanAcitvity" />
+        <activity android:name=".vista.DeviceScanActivity" />
+        <activity android:name=".vista.DeviceControlActivity" />
+        <activity android:name=".vista.EditDeleteGlucose" />
+        <activity android:name=".vista.EditDeleteFeeding" />
+        <activity android:name=".vista.EditDeleteInsulin" />
+        <activity android:name=".vista.EditDeleteSport" />
+        <activity android:name=".vista.HeartRate" />
+        <activity android:name=".vista.SleepActivity" />
+        <activity android:name=".vista.EmotionalState" />
+        <activity android:name=".vista.SportActivity" />
+        <activity android:name=".vista.Feeding" />
+        <activity android:name=".vista.Insulin" />
+        <activity android:name=".vista.Glucose" />
+        <activity android:name=".controlador.Principal" />
+        <activity android:name=".controlador.Access">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".controlador.notification.MyReceiver" />
+        <receiver
+            android:name=".controlador.notification.RestartAlarmsReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCwSI_kTlQlLHHkiOOMwR77t1jsGkE2frc" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

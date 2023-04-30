@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/inicioPantalla">
+
+    <fragment
+        android:id="@+id/perfilUsuario"
+        android:name="com.unileon.diabeticlog.vista.UserProfile"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/inicioPantalla"
+        android:name="com.unileon.diabeticlog.vista.Home"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+</navigation>

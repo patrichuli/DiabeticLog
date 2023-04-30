@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "562456208735",
+    "project_id": "diabeticlog-319115",
+    "storage_bucket": "diabeticlog-319115.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562456208735:android:cfaa7c47786adedab9c2ea",
+        "android_client_info": {
+          "package_name": "com.unileon.diabeticlog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562456208735-dohbunui0qadq5a2m96an90d1069covg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unileon.diabeticlog",
+            "certificate_hash": "52d7a1289601d7452e546ecd224fca95ac06dc13"
+          }
+        },
+        {
+          "client_id": "562456208735-d9gehs9islhj6ipp000k0bu3fctpo844.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwSI_kTlQlLHHkiOOMwR77t1jsGkE2frc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562456208735-d9gehs9islhj6ipp000k0bu3fctpo844.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
